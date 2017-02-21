@@ -128,7 +128,7 @@ public class SpringDSLResourceStateProvider implements ResourceStateProvider, Dy
      * @param stateObj
      * @param binding
      */
-    protected synchronized void storeState(Object stateObj, String binding) {
+    protected void storeState(Object stateObj, String binding) {
         synchronized (resources) {
             String stateName = stateObj.toString();
 
@@ -532,5 +532,4 @@ public class SpringDSLResourceStateProvider implements ResourceStateProvider, Dy
 
         return resourceStateId;
     }
-
 }
